@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+      <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- navbar  -->
+    <div class="container">
+        <!-- nav-container -->
+      <!-- <div class="nav-container"> -->
+        <!-- <nav class="navbar navbar-light bg-light justify-content-between">
+          <a class="navbar-brand">Rajdeep Kaur</a>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </nav> -->
+      <!-- </div> -->
+
+
+    <!-- header -->    
+      <header>
+          <h1>Password Generator</h1>
+      </header>
+
+    <!-- Card -->  
+      <div class="card">
+  
+        <!-- Card header -->  
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
+                      <!-- Password Criteria -->  
+                      <div class="criterias">
+                        <p>Select the criterias below you would like to include in your password. All are checked by default.</p>
+                        <div class="criteria">
+                          <label for="length">Length</label>
+                          <input type="number" id="length" aria-multiline="8" max="128" value="10" style="float:right"/>
+                        </div>
+                        <div class="criteria">
+                          <label for="lowercase">Lowercase</label>
+                          <input type="checkbox" id="lowercase" style="float:right" checked />
+                        </div>
+                        <div class="criteria">
+                          <label for="uppercase">Uppercase</label>
+                          <input type="checkbox" id="uppercase" style="float:right" checked />
+                        </div>
+                        <div class="criteria">
+                          <label for="numbers">Numeric</label>
+                          <input type="checkbox" id="numeric" style="float:right" checked/>
+                        </div>
+                        <div class="criteria">
+                          <label for="specialCharacters">Special Characters</label>
+                          <input type="checkbox" id="specialCharacters" style="float:right" checked />
+                        </div>
+                      </div>
+        
+            <!-- Card Body -->  
+        <div class="card-body">
+          <div class="row">
+            <div class="col-9">
+              <textarea
+                readonly
+                id="password"
+                placeholder="Your Secure Password"
+                aria-label="Generated Password"
+              ></textarea>
+            </div>         
+
+              <!-- Clipboard -->  
+              <div class="col-3">
+                  <p>Click to copy</p>
+                  <svg width="8em" height="3em" viewBox="0 0 16 16" class="bi bi-clipboard" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                    <path fill-rule="evenodd" d="M9.5 1h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+                  </svg>
+              </div>
+            </div>
+          </div>
+
+            <div class="card-footer">
+              <button id="generate" class="btn" >Generate Password</button>
+            </div>
+      </div>
+
+          <!-- footer -->
+
+      <div class="card bg-primary text-white text-center p-3">
+        <blockquote class="blockquote mb-0">
+          <p>Built by Rajdeep Kaur</p>
+          <footer class="blockquote-footer text-white">
+            <small>
+              Github: TBD <href src="https://github.com/rajdeep041/02ResponsivePortfolio" alt="Needs to be changed" /href>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+
+  </div>
+ 
+
+    <script src="script.js"></script>
+  </body>
+</html>
