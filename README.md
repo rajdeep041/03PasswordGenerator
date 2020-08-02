@@ -1,7 +1,22 @@
-# 03 JavaScript: Password Generator
+# Rajdeep's Password Generator
+Git Hub Repo : https://github.com/rajdeep041/03PasswordGenerator
 
-<h3>Generate Password Responsive Page</h3>
-<img src="" alt="Generate Password Responsive"/>
+Deployed Site Url : [git@github.com:rajdeep041/03PasswordGenerator.git](https://rajdeep041.github.io/03PasswordGenerator/)
+
+## Generate Password Responsive Page
+The following image demonstrates the application functionality:
+
+![password generator demo](./Assets/Screen%20Shot%202020-08-01%20at%2011.25.35%20PM.png)
+
+## Descripton
+This is a mobile friendly app which allows a user to create a random password to meet selective criteria.
+
+## Sub-goals:
+This is the first version on my portfolio site. There is a lot that could be modified to make it neater. This site will be an ongoing progress. 
+
+
+
+
 
 ## User Story
 
@@ -31,9 +46,6 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-The following image demonstrates the application functionality:
-
-![password generator demo](./Assets/03-javascript-homework-demo.png)
 
 ## Review
 
